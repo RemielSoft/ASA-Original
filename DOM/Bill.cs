@@ -6,6 +6,8 @@ using System.Text;
 namespace DOM
 {
     [Serializable]
+    
+    //Test User
     public class Bill:Base
     {
         public int BillId { get; set; }
