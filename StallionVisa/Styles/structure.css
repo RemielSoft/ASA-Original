@@ -1,0 +1,128 @@
+body
+{
+    background: url(../Images/bgrepeate.jpg) no-repeat;
+    padding:0px;
+    margin:0px;
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+
+#header img
+{
+    
+    position:relative;
+    top: 0px;
+    left: 0px;
+}
+
+.box
+{
+    background: #fff;
+    
+    color: White;
+    font: normal 12px/14px Arial, Helvetica, Sans-serif;
+    margin: 0 auto 29px;
+    overflow: hidden;
+}
+.box.login
+{
+    height: 193px;
+    width: 400px;
+    position:relative;
+    text-align:center;
+    margin: 20px 0 0 32%;
+}
+.boxBody
+{
+    background: #fff;
+    padding: 0px 5px;
+    color: #000;
+    height: 196px;
+    width: 400px;
+}
+
+
+.box label
+{
+    display: block;
+    font: 14px/22px Arial, Helvetica, Sans-serif;
+    margin: 0px 0 0 0px;
+    text-align:center;
+}
+
+.box input[type=text], .box input[type=password], .txtField, .cjComboBox
+{
+    border: 1px solid blue;
+    margin: 10px 0px 0px 15px;
+    padding: 3px 8px;
+    width: 200px;
+    display: block;
+    text-align:left;
+}
+
+#bottom
+{
+    left: 0;
+    bottom: 0;
+    background:blue;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+}
+
+
+
+
+.textboxlogin
+{
+    background: url(/images/login_textb_bg.gif) repeat-x left top;
+    text-align: left;
+    color: #000;
+    padding-left: 0px;
+    font-size: 9pt;
+    margin: 5px 0px;
+}
+.logintext
+{
+    font-size: 12px;
+    text-align: left;
+    margin: 0px 0px 0px 5px;
+    color: #000;
+}
+
+.txtbottom
+{
+    text-align:center;
+    margin:5px 0px 0px 35%;
+    font:bold 11px/10px arial;
+    color:White;
+    text-decoration:none;
+    position:absolute;
+}
+
+.txtbottom:hover
+{
+    color:Red;
+}
+
+
+.topcornbox
+{
+    background: url(../Images/boxcorntop.png) no-repeat;
+    width: 405px;
+    height: 5px;
+    margin: 16px 0px 0px 312px;
+    position: relative;
+}
+
+.botcornbox
+{
+    background: url(../Images/boxcornbottom.png) no-repeat;
+    width: 405px;
+    height: 5px;
+    margin: 211px 0px 0px 312px;
+    position: relative;
+}
+

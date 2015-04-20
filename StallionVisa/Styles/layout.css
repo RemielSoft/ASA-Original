@@ -1,0 +1,181 @@
+
+div#header
+{
+    height: 75px;
+    width: 100%;
+    position: relative;
+    top: 12px;
+    left: 0px;
+}
+
+.div-popup {
+            background-color:#fff;
+            -moz-box-shadow:0px 3px 7px 0px #070101;
+-webkit-box-shadow:0px 3px 7px 0px #070101;
+box-shadow:0px 3px 7px 0px #070101;
+
+            padding:0px 10px 10px 10px;
+            width: 96%;
+            height:500px;
+            
+ }
+ .popup-close
+ {
+ position:relative;
+    top:3px;
+    float:right;
+    right:3px; 
+      
+ }
+
+.popupMenu
+{
+    padding: 5px 5px;
+    background-color: #dedede;
+}
+.popup
+{
+    height: 450px;
+    background-color: #fff;
+    border-left: 2px solid #0055e6;
+    border-right: 2px solid #0055e6;
+    border-bottom: 2px solid #0055e6;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    z-index: 1001;
+}
+.popup1
+{
+    width: 820px;
+    position: relative;
+    z-index: 101;
+    left: 10%;
+    z-index: 1001;
+}
+
+/* my tab css*/
+
+.PopUpClose
+{
+    position: relative;
+    top: 0px;
+    right: 0px;
+    height: 22px;
+    background: #0152dc;
+    background: -webkit-linear-gradient(top, #036cfe, #0152dc, #036cfe);
+    background: -moz-linear-gradient(top, #036cfe, #0152dc, #036cfe);
+    background: -ms-linear-gradient(top, #036cfe, #0152dc, #036cfe);
+    background: -o-linear-gradient(top, #036cfe, #0152dc, #036cfe);
+    border-left: 2px solid #0055e6;
+    border-right: 2px solid #0055e6;
+    border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+}
+.btnclosepopup
+{
+    position: relative;
+    float: right;
+}
+.buttonclosepopup
+{
+    color: #fff;
+    background: #bf0404;
+    background: -webkit-linear-gradient(top, #bf0404, #fc0202);
+    background: -moz-linear-gradient(top, #bf0404, #fc0202);
+    background: -ms-linear-gradient(top, #bf0404, #fc0202);
+    background: -o-linear-gradient(top, #bf0404, #fc0202);
+    border: 0px;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Verdana;
+    height: 20px;
+    border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+}
+.imglogo
+{
+    border: 0px;
+    margin-left: 10px;
+}
+
+.popupbox
+{
+    width: 820px;
+    height: 500px;
+    color: #000;
+    border:2px solid #ccc;
+    background: #fff;
+    background-repeat: no-repeat;
+    display: none; /* Hidden as default */
+    float: left;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 99999;
+    -webkit-box-shadow: 0px 0px 20px #000;
+    -moz-box-shadow: 0px 0px 20px #000;
+    box-shadow: 0px 0px 20px #000;
+}
+.PopupDivInner
+{
+    width:100%;
+    height:477px;
+    overflow:scroll;
+    overflow-x:hidden;
+}
+
+
+
+.PopupClose
+{
+    position:relative;
+    top:3px;
+    float:right;
+    right:3px;
+}
+#close img
+{
+    text-decoration: none;
+}
+
+
+
+.popup
+{
+    position: relative;
+    top: 150px;
+}
+.LebelDivD
+{ 
+    position:relative;
+    float:left;
+    margin:7px 5px;
+    color:#fff;
+    font-family:Verdana;
+    font-size:14px;
+    font-weight:bold;
+}
+.MainDiv
+{
+    position:relative;
+    margin:auto;
+    width:800px;
+}
+.intabdiv
+{
+   position:relative;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:30px;
+    background-color:#DD0101;
+    border-bottom:2px solid #ccc;
+    
+}
+.intabdiv title
+{
+   position:relative;
+   color:#ffffff;
+}

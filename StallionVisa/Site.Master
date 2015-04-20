@@ -1,0 +1,93 @@
+﻿
+
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="StallionVisa.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+
+    <title></title>
+
+    <script type="text/javascript">
+        function checkdate(sender, args) {
+            if (sender._selectedDate > new Date()) {
+                alert("You Cannot enter a Date Greater than Today!");
+                sender._selectedDate = new Date();
+                sender._textbox.set_Value(sender._selectedDate.format(sender._format))
+            }
+        }
+    </script>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    
+    <link href="Styles/Bill.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    ASA INDUSTRIES 
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        <a href="~/ViewBill.aspx" ID="HeadLoginStatus" runat="server">View Bills</a>
+                        <asp:ImageButton ID="imgSignOut" runat="server" ImageUrl="../images/signout_icon.png"
+                            OnClick="imgSignOut_Click" CausesValidation="False"  ToolTip="Signout" Style="vertical-align: bottom; padding-top:5px;" />
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span> &nbsp;| &nbsp;
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+           
+            <div class="clear hideSkiplink">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" >
+                <tr>
+                    <td align="left">
+                        <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/GenerateBill.aspx" Text="Generate Bill"/>
+                        <asp:MenuItem NavigateUrl="~/ViewBill.aspx" Text="View Bill"/>
+                        <asp:MenuItem NavigateUrl="~/LedgerDetail.aspx" Text="Ledger Detail"/>
+                        <asp:MenuItem NavigateUrl="~/ViewReortItem.aspx" Text="ReportView" />
+                    </Items>
+                </asp:Menu>
+                    </td>
+                    <td align="right">
+                         <asp:Menu ID="NavigationMenuAdmin" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                    <asp:MenuItem NavigateUrl="~/ProductMaster.aspx" Text="Product Master"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/CompanyMaster.aspx" Text="Company Master"/>
+                        <asp:MenuItem NavigateUrl="~/UserRegistration.aspx" Text="Manage User" />
+                    </Items>
+                </asp:Menu>
+                    </td>
+                </tr>
+            </table>
+                 
+                
+                   
+                
+            </div>
+
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>
