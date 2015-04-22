@@ -9,6 +9,7 @@ using DOM;
 
 namespace DAL
 {
+    //Check out Promp is required
     public class BillDetailDAL
     {
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["conStr"].ToString());
